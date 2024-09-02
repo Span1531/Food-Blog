@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Spanish Cuisine</title>
+    <style>
+        body {
+            background-color: #f7f2e9;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #d4a017;
+            width: 100%;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        h1 {
+            margin: 20px 0;
+            color: #b88d14;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            max-width: 800px;
+            text-align: justify;
+        }
+        .dish-list {
+            margin-top: 30px;
+            width: 60%;
+        }
+        .dish-list form {
+            display: flex;
+            flex-direction: column;
+        }
+        .dish-list label {
+            background-color: #f8e8e8;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .dish-list img {
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+        .dish-price {
+            margin-left: 20px;
+            color: #d4a017;
+            font-weight: bold;
+        }
+        .dish-quantity {
+            display: flex;
+            align-items: center;
+        }
+        .dish-quantity input[type="number"] {
+            width: 60px;
+            margin-left: 10px;
+            padding: 5px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .dish-list input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .submit-button {
+            margin-top: 20px;
+            background-color: #d4a017;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-left: auto;
+            display: block;
+        }
+        .back-link {
+            margin-top: 30px;
+            color: #d4a017;
+            text-decoration: none;
+            font-size: 18px;
+            border: 2px solid #d4a017;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .back-link:hover {
+            background-color: #d4a017;
+            color: white;
+        }
+        footer {
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Spanish Cuisine</h1>
+    </header>
+
+    <main>
+        <p>Welcome to the Spanish Cuisine page! Spanish cuisine is rich and diverse, known for its use of fresh ingredients and bold flavors.
+            It is famous for dishes like Escalivada, Trempo, Samfaina, Tapas, and Churros. Olive oil, garlic, and paprika are commonly used in Spanish cooking.</p>
+
+        <div class="dish-list">
+            <h2>Popular Dishes</h2>
+            <form action="NetBanking.html" method="get">
+                <label>
+                    <input type="checkbox" name="dish" value="Escalivada">
+                    <img src="escalivada.jpg" alt="Escalivada">
+                    Escalivada
+                    <div class="dish-quantity">
+                        Quantity: 
+                        <input type="number" name="quantity_Escalivada" value="1" min="1" max="10">
+                        <div class="dish-price">250/-</div>
+                    </div>
+                </label>
+                <label>
+                    <input type="checkbox" name="dish" value="Trempo">
+                    <img src="trempo.jpg" alt="Trempo">
+                    Trempo
+                    <div class="dish-quantity">
+                        Quantity: 
+                        <input type="number" name="quantity_Trempo" value="1" min="1" max="10">
+                        <div class="dish-price">200/-</div>
+                    </div>
+                </label>
+                <label>
+                    <input type="checkbox" name="dish" value="Samfaina">
+                    <img src="samfaina.jpg" alt="Samfaina">
+                    Samfaina
+                    <div class="dish-quantity">
+                        Quantity: 
+                        <input type="number" name="quantity_Samfaina" value="1" min="1" max="10">
+                        <div class="dish-price">220/-</div>
+                    </div>
+                </label>
+                <label>
+                    <input type="checkbox" name="dish" value="Tapas">
+                    <img src="tapas.jpg" alt="Tapas">
+                    Tapas
+                    <div class="dish-quantity">
+                        Quantity: 
+                        <input type="number" name="quantity_Tapas" value="1" min="1" max="10">
+                        <div class="dish-price">300/-</div>
+                    </div>
+                </label>
+                <label>
+                    <input type="checkbox" name="dish" value="Churros">
+                    <img src="churros.jpg" alt="Churros">
+                    Churros
+                    <div class="dish-quantity">
+                        Quantity: 
+                        <input type="number" name="quantity_Churros" value="1" min="1" max="10">
+                        <div class="dish-price">150/-</div>
+                    </div>
+                </label>
+                <input type="submit" class="submit-button" value="Proceed to Payment">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <a href="FoodCourt.html" class="back-link">Back to Home</a>
+    </footer>
+</body>
+</html>

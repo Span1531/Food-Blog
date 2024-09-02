@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us - RSV's Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+        header {
+            background-color: #c0392b;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .container {
+            margin: 30px auto;
+            width: 80%;
+            max-width: 800px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #c0392b;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            width: 100%;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        button {
+            background-color: #c0392b;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #a93226;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+        .contact-info a {
+            color: #c0392b;
+            text-decoration: none;
+        }
+        footer {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <div class="container">
+        <h2>Thank you for contacting us!! </h2>
+        <form action="thankyou.html" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <div class="contact-info">
+        <p><strong>Address:</strong> Opposite to Mayflower Grande,Habsiguda</p>
+        <p><strong>Phone:</strong> +91 (123) 456-7890</p>
+        <p><strong>Email:</strong> <a href="mailto:rsv@restaurant.com">rsv@restaurant.com</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 RSV's Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>

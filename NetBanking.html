@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Net Banking</title>
+    <style>
+        body {
+            background-image: url('NetBanking.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+        }
+        header h1 {
+            color: #f5f5f5;
+            font-size: 36px;
+            margin: 0;
+        }
+        .container {
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 50%;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        label {
+            font-size: 20px;
+            margin-left: 20px;
+            display: block;
+            padding: 10px 0;
+            cursor: pointer;
+        }
+        input[type="radio"] {
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        button {
+            display: block;
+            margin: 30px auto 0 auto;
+            border: 3px solid black;
+            background: lightslategray;
+            color: white;
+            height: 50px;
+            width: 120px;
+            font-size: 17px;
+            text-shadow: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        button:hover {
+            background-color: #004d80;
+            transform: scale(1.05);
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: white;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Net Banking</h1>
+    </header>
+    <div class="container">
+        <hr>
+        <input type="radio" name="bank" value="ICICI">
+        <label for="ICICI">ICICI Bank</label>
+
+        <input type="radio" name="bank" value="SBI">
+        <label for="SBI">SBI Bank</label>
+
+        <input type="radio" name="bank" value="HDFC">
+        <label for="HDFC">HDFC Bank</label>
+
+        <input type="radio" name="bank" value="BOI">
+        <label for="BOI">BOI</label>
+
+        <input type="radio" name="bank" value="Kotak Mahindra">
+        <label for="Kotak Mahindra">Kotak Mahindra</label>
+
+        <input type="radio" name="bank" value="UPI">
+        <label for="UPI">Other UPI Methods</label>
+
+        <a href="Form.html">
+            <button>Submit</button>
+        </a>
+    </div>
+</body>
+</html>

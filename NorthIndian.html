@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>North Indian Cuisine</title>
+    <style>
+        body {
+            background-color: #f9f5e7;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: chocolate;
+            width: 100%;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        h1 {
+            margin: 20px 0;
+            color: #5a3c2a;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            max-width: 800px;
+            text-align: justify;
+        }
+        .dish-list {
+            margin-top: 30px;
+            width: 60%;
+        }
+        .dish-list form {
+            display: flex;
+            flex-direction: column;
+        }
+        .dish-list label {
+            background-color: #efebd8;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .dish-list img {
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+        .dish-price {
+            margin-left: 20px;
+            color: chocolate;
+            font-weight: bold;
+        }
+        .dish-quantity {
+            display: flex;
+            align-items: center;
+        }
+        .dish-quantity input[type="number"] {
+            width: 60px;
+            margin-left: 10px;
+            padding: 5px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .dish-list input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .submit-button {
+            margin-top: 20px;
+            background-color: chocolate;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-left: 200px;
+        }
+        .back-link {
+            margin-top: 30px;
+            color: chocolate;
+            text-decoration: none;
+            font-size: 18px;
+            border: 2px solid chocolate;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .back-link:hover {
+            background-color: chocolate;
+            color: white;
+        }
+        footer{
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>North Indian Cuisine</h1>
+    </header>
+
+    <main>
+        <p>Welcome to the North Indian Cuisine page! North Indian cuisine is known for its rich flavors,
+           aromatic spices, and a wide variety of dishes. Popular in regions like Punjab, Uttar Pradesh,
+           and Rajasthan, the cuisine is famous for its use of dairy products, including paneer, and its
+           bread varieties like naan, paratha, and roti. Some of the signature dishes include Palak panner, Butter Naan, 
+           Shahi Panner, Butter Masala, Panner Chatpat, and Dal fry.</p>
+
+        <div class="dish-list">
+            <h2>Popular Dishes</h2>
+            <form action="NetBanking.html" method="get">
+                <label>
+                    <input type="checkbox" name="dish" value="Palak panner">
+                    <img src="palak_paneer.jpg" alt="Palak Paneer">
+                    Palak Panner
+                    <div class="dish-quantity">
+                        Quantity: 
+                        <input type="number" name="quantity_Palak_Paneer" value="1" min="1" max="10">
+                        <div class="dish-price">250/-</div>
+                    </div>
+                </label>
+                <label>
+                    <input type="checkbox" name="dish" value="Butter Naan">
+                    <img src="butter_naan.jpg" alt="Butter Naan">
+                    Butter Naan
+                    <div class="dish-quantity">
+                        Quantity: 
+                        <input type="number" name="quantity_Butter_Naan" value="1" min="1" max="10">
+                        <div class="dish-price">50/-</div>
+                    </div>
+                </label>
+                <label>
+                    <input type="checkbox" name="dish" value="Shahi Panner">
+                    <img src="shahi_paneer.jpg" alt="Shahi Paneer">
+                    Shahi Panner
+                    <div class="dish-quantity">
+                        Quantity: 
+                        <input type="number" name="quantity_Shahi_Paneer" value="1" min="1" max="10">
+                        <div class="dish-price">280/-</div>
+                    </div>
+                </label>
+                <label>
+                    <input type="checkbox" name="dish" value="Butter Masala">
+                    <img src="butter_masala.jpg" alt="Butter Masala">
+                    Butter Masala
+                    <div class="dish-quantity">
+                        Quantity: 
+                        <input type="number" name="quantity_Butter_Masala" value="1" min="1" max="10">
+                        <div class="dish-price">270/-</div>
+                    </div>
+                </label>
+                <label>
+                    <input type="checkbox" name="dish" value="Panner Chatpat">
+                    <img src="paneer_chatpat.jpg" alt="Paneer Chatpat">
+                    Paneer Chatpat
+                    <div class="dish-quantity">
+                        Quantity: 
+                        <input type="number" name="quantity_Paneer_Chatpat" value="1" min="1" max="10">
+                        <div class="dish-price">260/-</div>
+                    </div>
+                </label>
+                <label>
+                    <input type="checkbox" name="dish" value="Dal fry">
+                    <img src="dal_fry.jpg" alt="Dal Fry">
+                    Dal Fry
+                    <div class="dish-quantity">
+                        Quantity: 
+                        <input type="number" name="quantity_Dal_Fry" value="1" min="1" max="10">
+                        <div class="dish-price">180/-</div>
+                    </div>
+                </label>
+                <input type="submit" class="submit-button" value="Proceed to Payment">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <a href="FoodCourt.html" class="back-link">Back to Home !</a>
+    </footer>
+</body>
+</html>

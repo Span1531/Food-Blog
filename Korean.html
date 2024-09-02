@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Korean Cuisine</title>
+    <style>
+        body {
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #d32f2f;
+            width: 100%;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        h1 {
+            margin: 20px 0;
+            color: #9c1f1f;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            max-width: 800px;
+            text-align: justify;
+        }
+        .dish-list {
+            margin-top: 30px;
+            width: 60%;
+        }
+        .dish-list form {
+            display: flex;
+            flex-direction: column;
+        }
+        .dish-list label {
+            background-color: #f8e8e8;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .dish-list img {
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+        .dish-price {
+            margin-left: 20px;
+            color: #d32f2f;
+            font-weight: bold;
+        }
+        .dish-quantity {
+            display: flex;
+            align-items: center;
+        }
+        .dish-quantity input[type="number"] {
+            width: 60px;
+            margin-left: 10px;
+            padding: 5px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .dish-list input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .submit-button {
+            margin-top: 20px;
+            background-color: #d32f2f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-left: auto;
+            display: block;
+        }
+        .back-link {
+            margin-top: 30px;
+            color: #d32f2f;
+            text-decoration: none;
+            font-size: 18px;
+            border: 2px solid #d32f2f;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .back-link:hover {
+            background-color: #d32f2f;
+            color: white;
+        }
+        footer{
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Korean Cuisine, Jin's Favourite</h1>
+    </header>
+
+    <main>
+        <p>Welcome to the Korean Cuisine page! Korean cuisine is characterized by bold flavors, vibrant colors, and a balance of spicy,
+            sweet, sour, and savory tastes. Fermented foods like kimchi play a significant role, as do various meats and vegetables.
+            Some iconic dishes include Kimchi, Hobak Buchim, Dubu Jorim, Oi Muchim, Tofu Gimbap, Kongnamul Japchae, and Miyeok Muchim.</p>
+
+        <div class="dish-list">
+            <h2>Popular Dishes</h2>
+            <form action="NetBanking.html" method="get">
+                <label>
+                    <input type="checkbox" name="dish" value="Kimchi">
+                    <img src="kimchi.jpg" alt="Kimchi">
+                    Kimchi
+                    <div class="dish-quantity">
+                        Quantity: 
+                        <input type="number" name="quantity_Kimchi" value="1" min="1" max="10">
+                        <div class="dish-price">150/-</div>
+                    </div>
+                </label>
+                <label>
+                    <input type="checkbox" name="dish" value="Dubu Jorim">
+                    <img src="dubu_jorim.jpg" alt="Dubu Jorim">
+                    Dubu Jorim
+                    <div class="dish-quantity">
+                        Quantity: 
+                        <input type="number" name="quantity_Dubu_Jorim" value="1" min="1" max="10">
+                        <div class="dish-price">200/-</div>
+                    </div>
+                </label>
+                <label>
+                    <input type="checkbox" name="dish" value="Hobak Buchim">
+                    <img src="hobak_buchim.jpg" alt="Hobak Buchim">
+                    Hobak Buchim
+                    <div class="dish-quantity">
+                        Quantity: 
+                        <input type="number" name="quantity_Hobak_Buchim" value="1" min="1" max="10">
+                        <div class="dish-price">180/-</div>
+                    </div>
+                </label>
+                <label>
+                    <input type="checkbox" name="dish" value="Oi Muchim">
+                    <img src="oi_muchim.jpg" alt="Oi Muchim">
+                    Oi Muchim
+                    <div class="dish-quantity">
+                        Quantity: 
+                        <input type="number" name="quantity_Oi_Muchim" value="1" min="1" max="10">
+                        <div class="dish-price">130/-</div>
+                    </div>
+                </label>
+                <label>
+                    <input type="checkbox" name="dish" value="Tofu Gimbap">
+                    <img src="tofu_gimbap.jpg" alt="Tofu Gimbap">
+                    Tofu Gimbap
+                    <div class="dish-quantity">
+                        Quantity: 
+                        <input type="number" name="quantity_Tofu_Gimbap" value="1" min="1" max="10">
+                        <div class="dish-price">250/-</div>
+                    </div>
+                </label>
+                <label>
+                    <input type="checkbox" name="dish" value="Kongnamul Japchae">
+                    <img src="kongnamul_japchae.jpg" alt="Kongnamul Japchae">
+                    Kongnamul Japchae
+                    <div class="dish-quantity">
+                        Quantity: 
+                        <input type="number" name="quantity_Kongnamul_Japchae" value="1" min="1" max="10">
+                        <div class="dish-price">220/-</div>
+                    </div>
+                </label>
+                <label>
+                    <input type="checkbox" name="dish" value="Miyeok Muchim">
+                    <img src="miyeok_muchim.jpg" alt="Miyeok Muchim">
+                    Miyeok Muchim
+                    <div class="dish-quantity">
+                        Quantity: 
+                        <input type="number" name="quantity_Miyeok_Muchim" value="1" min="1" max="10">
+                        <div class="dish-price">140/-</div>
+                    </div>
+                </label>
+                <input type="submit" class="submit-button" value="Proceed to Payment">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <a href="FoodCourt.html" class="back-link">Back to Home</a>
+    </footer>
+</body>
+</html>

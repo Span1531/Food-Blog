@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Food Court</title>
+    <style>
+        body {
+            background-image: url('restaurant-background.jpg'); 
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(255, 69, 0, 0.9);
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: rgba(255, 69, 0, 1);
+            color: white;
+        }
+        h1 {
+            text-align: center;
+            color: chocolate;
+            margin: 20px 0;
+        }
+        marquee {
+            color: indianred;
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        .container {
+            text-align: center;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 50%;
+            border-radius: 15px;
+        }
+        select {
+            padding: 15px 20px;
+            font-size: medium;
+            margin-top: 20px;
+            border-radius: 10px;
+            background-color: lightgray;
+            color: black;
+            border: 2px solid maroon;
+        }
+        input[type="submit"] {
+            margin-top: 30px;
+            border: 3px solid maroon;
+            background: lightgrey;
+            color: black;
+            height: 50px;
+            width: 100px;
+            font-size: 18px;
+            border-radius: 10%;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: maroon;
+            color: white;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: lightgrey;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="FoodCourt.html">Home</a>
+            <a href="Contact.html">Contact</a>
+            <a href="SignIn.html">Sign In</a>
+            <a href="SignUp.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Welcome to RSV's Restaurant</h1>
+        <marquee><i><b>WELCOME TO OUR RESTAURANT</b></i></marquee>
+        
+        <label for="Food"><strong>Choose your cuisine: </strong></label>
+        <br><br>
+        <select name="Food" id="Food" onchange="if(this.value) window.location.href=this.value;">
+            <option value="" disabled selected>--Select Cuisine--</option>
+            <option value="NorthIndian.html">North Indian</option>
+            <option value="SouthIndian.html">South Indian</option>
+            <option value="Spanish.html">Spanish</option>
+            <option value="Italian.html">Italian</option>
+            <option value="Chinese.html">Chinese</option>
+            <option value="Korean.html">Korean</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </main>
+
+    <footer>
+        <p> Agree to all our terms of serive, Cookie policy, Privacy policy and Content policies.</p>
+        <p> All trademarks are properties of thier respective owners.</p>
+        <p>&copy; All rights reserved.</p>
+    </footer>
+</body>
+</html>
